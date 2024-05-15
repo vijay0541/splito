@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Work+Sans:ital,wght@0,200;1,100&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="login/login.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <title style="font-family: 'La Belle Aurore', cursive;">Splito</title>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>$P</span>LITO </h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Services</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a type="button" href="#hero" class="signin" data-after="Contact" style="cursor: pointer;"
+                onclick="signin()">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- login -->
+  <div class="overlay" onclick="closeform()"></div>
+  <section class="container1 forms">
+    <div class="form login">
+      <div class="form-content">
+        <header>Lo<span class="but-col">g</span>in</header>
+        <form action="#">
+          <div class="field input-field">
+            <input type="email" placeholder="Email" class="input">
+          </div>
+
+          <div class="field input-field">
+            <input type="password" placeholder="Password" class="password">
+            <i class='bx bx-hide eye-icon'></i>
+          </div>
+
+          <div class="form-link">
+            <a href="#" class="forgot-pass">Forgot password?</a>
+          </div>
+
+          <div class="field button-field">
+            <button id="newpage" type="button" >Login</button>
+          </div>
+        </form>
+
+        <div class="form-link">
+          <span style="color: white;">Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="media-options">
+        <a href="https://accounts.google.com/" class="field google">
+          <img src="login/images/google.png" alt="" class="google-img">
+          <span style="color: white;">Login with Google</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Signup Form -->
+
+    <div class="form signup">
+      <div class="form-content">
+        <header>Sig<span class="but-col">n</span>up</header>
+        <form action="#">
+          <div class="field input-field">
+            <input type="email" placeholder="Email" class="input">
+          </div>
+
+          <div class="field input-field">
+            <input type="password" placeholder="Enter password" class="password">
+          </div>
+
+          <div class="field input-field">
+            <input type="password" placeholder="Confirm password" class="password">
+            <i class='bx bx-hide eye-icon'></i>
+          </div>
+
+          <div class="field button-field">
+            <button>Signup</button>
+          </div>
+        </form>
+
+        <div class="form-link">
+          <span style="color: white;">Already have an account? <a href="#" class="link login-link ">Login</a></span>
+        </div>
+      </div>
+      <div class="line"></div>
+
+      <div class="media-options">
+        <a href="https://accounts.google.com/" class="field google">
+          <img src="login/images/google.png" alt="" class="google-img">
+          <span style="color: white;">Login with Google</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1> <span></span></h1>
+        <h1>“Let's Contribute”<span></span></h1>
+        <a href="#projects" type="button" class="cta" >Enter Code</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">SE₹V<span>I</span>CES</h1>
+        <p></p>
+      </div>
+      <div class="home-container">
+        <div class="ui-card">
+          <img src="./img/travel2.jpg">
+          <div class="description">
+            <h3>Travell</h3>
+            <p>A journey is best measured in friends, rather than miles.Contribute and Let's Go..</p>
+            <a href="#hero" type="button" class="cta " onclick="signin()" >SignUp</a>
+          </div>
+        </div>
+        <div class="ui-card">
+          <img src="./img/party1.jpg">
+          <div class="description">
+            <h3>Party</h3>
+            <p>Celebrate your life, you are your own light.</p>
+            <a href="#hero" type="button" class="cta " onclick="signin()">SignUp</a>
+          </div>
+        </div>
+        <div class="ui-card">
+          <img src="./img/food1.jpg">
+          <div class="description">
+            <h3>Kitechen</h3>
+            <p>People who love to eat are alwayse the best people.</p>
+            <a href="#hero" type="button" class="cta " onclick="signin()">SignUp</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- End Service Section -->
+
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-right">
+        <h1 class="section-title">A₿<span>0</span>UT</h1>
+        <p>This Website help you to manage your Expenses. The company itself is an idea about the contribution of bills or expenses among people. However, it also
+          maintain the record of data of an individual person. It can be used in several cases i.e
+          party, travel, grocery..
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur corrupti odit eos minus harum doloremque
+          officia enim aliquid. Repellendus, distinctio quia. Qui, laboriosam sunt. Quibusdam veritatis exercitationem
+          dolor ut praesentium.</p>
+        <a href="#" class="cta">Know more</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>$P</span>LITO </h1>
+      </div>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/gmail-new.png" /></a>
+        </div>
+      </div>
+      <p>Developed By Tushar Sahani</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="login/login.js"></script>
+</body>
+
+</html>
